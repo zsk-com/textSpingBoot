@@ -1,0 +1,15 @@
+server:
+  port: 8090
+
+spring:
+  datasource:
+    db1:
+      jdbc-url: jdbc:mysql://localhost:3306/atm?characterEncoding=UTF-8&serverTimezone=UTC
+      password: root
+      username: root
+      driver-class-name: com.mysql.jdbc.Driver
+    db2:
+      jdbc-url: jdbc:mysql://localhost:3306/emp?characterEncoding=UTF-8&serverTimezone=UTC
+      password: root
+      username: root
+      driver-class-name: com.mysql.jdbc.Driver
