@@ -1,10 +1,10 @@
-package com.duyi.even;
+package com.duyi.event;
 
 import org.springframework.context.ApplicationEvent;
 
-public class Eeve extends ApplicationEvent {
+public class Event extends ApplicationEvent {
 
-    public Eeve(Object source) {
+    public Event(Object source) {
         super(source);
     }
 

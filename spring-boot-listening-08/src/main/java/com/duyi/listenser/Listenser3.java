@@ -1,6 +1,6 @@
-package com.duyi.listen;
+package com.duyi.listenser;
 
-import com.duyi.even.Eeve;
+import com.duyi.event.Event;
 import org.springframework.context.event.EventListener;
 import org.springframework.stereotype.Component;
 
@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 public class Listenser3 {
 
     @EventListener
-    public void test(Eeve eeve){
+    public void test(Event eeve){
         eeve.print("事件3");
     }
 }

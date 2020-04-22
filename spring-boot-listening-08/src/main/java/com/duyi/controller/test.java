@@ -1,6 +1,6 @@
 package com.duyi.controller;
 
-import com.duyi.even.Eeve;
+import com.duyi.event.Event;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -13,7 +13,7 @@ public class test {
 
     @RequestMapping("/test")
     public String test(){
-        publisher.publishEvent(new Eeve(this));
+        publisher.publishEvent(new Event(this));
         return "success";
     }
 }
